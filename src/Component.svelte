@@ -135,21 +135,6 @@
         class="spectrum-Button spectrum-Button--quiet spectrum-Button--secondary spectrum-Button--sizeS">
           {resetText}
       </button>
-    {/if}
-    {#if isParsed && importErrors.length > 0}
-      <button 
-        class="spectrum-Button spectrum-Button--fill spectrum-Button--primary spectrum-Button--sizeS"
-        on:click={copyErrors}>
-          {copyErrorText}
-      </button>
-    {/if}
-    {#if isParsed && hasRows && !isImported}
-      <button
-        on:click={importData}
-        class="spectrum-Button spectrum-Button--fill spectrum-Button--primary spectrum-Button--sizeS">
-        {importText}
-      </button>
-    {/if}
   </div>
 
 </div>
